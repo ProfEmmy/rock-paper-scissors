@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+  <script src="script.js" defer></script>
+  <script src="toggle_rule_modal.js" defer></script>
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+
+</head>
+
+<body>
+  <section>
+    <header>
+      <div class="header-div">
+        <div class="header-innerdiv">
+          <div class="logo-div">
+            <img src="images\logo.svg" alt="logo" class="logo">
+          </div>
+          <div class="score-div">
+            <div class="score-innerdiv">
+              <p class="score-label">score</p>
+              <h1 class="score">0</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="main-div">
+        <div class="main-content">
+          <div class="paper-scissors-divs">
+            <div class="paper-div play-option">
+              <div class="play-option-div">
+                <img src="images\icon-paper.svg" alt="icon-paper">
+              </div>
+            </div>
+            <div class="scissors-div play-option">
+              <div class="play-option-div">
+                <img src="images\icon-scissors.svg" alt="icon-scissors">
+              </div>
+            </div>
+          </div>
+          <div class="rock-parent-div">
+            <div class="rock-div play-option">
+              <div class="play-option-div">
+                <img src="images\icon-rock.svg" alt="icon-rock">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rules-btn-div">
+        <div class="rules-btn">Rules</div>
+      </div>
+
+      <div class="overlay display"></div>
+      <div class="rules-div display">
+        <div class="rules-innerdiv">
+          <div class="rules-head-div">
+            <h1 class="rules-heading">Rules</h1>
+            <img src="images\icon-close.svg" alt="icon-close" class="close-icon">
+          </div>
+          <div class="rules-img-div">
+            <img src="images\image-rules.svg" alt="image-rules" class="rules-img">
+          </div>
+        </div>
+      </div>
+    </main>
+  </section>
+
+  <template class="game-play-temp-win">
+    <div class="game-play-parent-div">
+      <div class="game-play-div">
+        <div class="user-pick-div">
+          <h3 class="user-picked-heading">You Picked</h3>
+        </div>
+
+        <div class="win-div">
+          <div class="win-innerdiv">
+            <h1 class="win-txt">you win</h1>
+            <button class="play-again-btn">play again</button>
+          </div>
+        </div>
+
+        <div class="house-pick-div">
+          <h3 class="house-picked-heading">The House Picked</h3>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <template class="game-play-temp-lose">
+    <div class="game-play-parent-div">
+      <div class="game-play-div">
+        <div class="user-pick-div">
+          <h3 class="user-picked-heading">You Picked</h3>
+        </div>
+
+        <div class="win-div">
+          <div class="win-innerdiv">
+            <h1 class="win-txt">you lose</h1>
+            <button class="play-again-btn">play again</button>
+          </div>
+        </div>
+
+        <div class="house-pick-div">
+          <h3 class="house-picked-heading">The House Picked</h3>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <template class="paper-temp">
+    <div class="play-option picked-play-option paper-div paper-choice">
+      <div class="play-option-div picked-play-optiondiv">
+        <img src="images\icon-paper.svg" alt="icon-paper">
+      </div>
+    </div>
+  </template>
+
+  <template class="scissors-temp">
+    <div class="play-option picked-play-option scissors-div scissors-choice">
+      <div class="play-option-div picked-play-optiondiv">
+        <img src="images/icon-scissors.svg" alt="icon-scissors">
+      </div>
+    </div>
+  </template>
+
+  <template class="rock-temp">
+    <div class="play-option picked-play-option rock-div rock-choice">
+      <div class="play-option-div picked-play-optiondiv">
+        <img src="images\icon-rock.svg" alt="icon-rock">
+      </div>
+    </div>
+  </template>
+</body>
+
+</html>
+
+
+
+<!-- Score
+Rules
+
+You Picked
+The House Picked
+
+You Win
+You Lose
+
+Play Again -->
+
+
+<!-- <div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+  Coded by <a href="#">Your Name Here</a>.
+</div> -->
