@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
 
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Barlow Semi Condensed', sans-serif;
     background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
@@ -313,4 +319,149 @@ header {
 
 .display {
     display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        padding-top: 6vh;
+    }
+
+    .header-div {
+        width: 85vw;
+        height: 20vh;
+        border-radius: 7px;
+    }
+
+    .header-innerdiv {
+        width: 75vw;
+    }
+
+    .logo {
+        width: 24vw;
+    }
+
+    .score-div {
+        width: 19vw;
+        height: 15vh;
+        border-radius: 5px;
+    }
+
+    .score-label {
+        margin-bottom: .2vh;
+        font-size: 1.1em;
+    }
+
+    .score {
+        font-size: 2.3em;
+    }
+
+    .play-option {
+        width: 27vw;
+        height: 22vh;
+    }
+
+    .paper-div {
+        border: 3vw solid hsl(230, 89%, 65%);
+        box-shadow: 0 1.3vh hsl(230, 89%, 52%);
+        margin-right: 12vw;
+    }
+
+    .scissors-div {
+        border: 3vw solid hsl(40, 84%, 53%);
+        box-shadow: 0 1.3vh hsl(39, 89%, 39%);
+    }
+
+    .rock-div {
+        border: 3vw solid hsl(349, 70%, 56%);
+        box-shadow: 0 1.3vh hsl(349, 71%, 42%);
+        margin-top: 5vh;
+    }
+
+    .play-option-div {
+        width: 27vw;
+        height: 21vh;
+        box-shadow: 0 -1vh hsl(217, 16%, 45%, .4);
+        margin-bottom: -1vh;
+    }
+
+    .play-option-div>img {
+        width: 12vw;
+    }
+
+    .rules-btn-div {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .rules-btn {
+        margin-top: 14vh;
+        margin-bottom: 14vh;
+    }
+
+    .rules-div {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+    .rules-innerdiv {
+        width: auto;
+        height: 80%;
+    }
+
+    .close-icon {
+        position: absolute;
+        bottom: 10%;
+    }
+
+    .rules-head-div {
+        display: flex;
+        justify-content: center;
+    }
+
+    .rules-heading {
+        text-align: center;
+        font-size: 2.3em;
+        margin-bottom: 10vh;
+    }
+
+    .game-play-div {
+        width: 85vw;
+        display: grid;
+        grid-template-columns: 30vw 23vw auto;
+        /* background-color: red; */
+    }
+
+    .game-play-parent-div {
+        /* background-color: green; */
+    }
+
+    .win-div {
+        display: flex;
+        justify-content: left;
+        align-items: end;
+        height: 70vh;
+        margin-left: -10vw;
+    }
+
+    .game-play-div>div>h3 {
+        position: relative;
+        top: 65%;
+        text-align: left;
+        margin-inline: 10px;
+        font-size: 1.1em;
+        width: 27vw;
+        text-align: center;
+    }
+
+    .picked-play-option {
+        margin: 0;
+    }
+
+    .section {
+        background-image: none;
+    }
 }
