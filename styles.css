@@ -328,12 +328,16 @@ header {
 
     .header-div {
         width: 85vw;
-        height: 21vh;
+        height: 20vh;
         border-radius: 7px;
     }
 
     .header-innerdiv {
         width: 75vw;
+    }
+
+    .logo {
+        width: 27vw;
     }
 
     .score-div {
@@ -353,7 +357,7 @@ header {
 
     .play-option {
         width: 27vw;
-        height: 20vh;
+        height: 18vh;
     }
 
     .paper-div {
@@ -375,7 +379,7 @@ header {
 
     .play-option-div {
         width: 27vw;
-        height: 19vh;
+        height: 17vh;
         box-shadow: 0 -1vh hsl(217, 16%, 45%, .4);
         margin-bottom: -1vh;
     }
