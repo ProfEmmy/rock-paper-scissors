@@ -336,8 +336,13 @@ header {
         width: 75vw;
     }
 
+    .main-content {
+        padding-top: 5vh;
+    }
+
     .logo {
         width: 27vw;
+        height: 85%;
     }
 
     .score-div {
@@ -356,8 +361,9 @@ header {
     }
 
     .play-option {
-        width: 27vw;
+        width: 29vw;
         height: 18vh;
+        margin-top: -5vh;
     }
 
     .paper-div {
@@ -378,7 +384,7 @@ header {
     }
 
     .play-option-div {
-        width: 27vw;
+        width: 29vw;
         height: 17vh;
         box-shadow: 0 -1vh hsl(217, 16%, 45%, .4);
         margin-bottom: -1vh;
